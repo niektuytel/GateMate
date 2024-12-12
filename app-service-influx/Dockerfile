@@ -1,40 +1,34 @@
-# Build stage: Compile the application service
-FROM --platform=linux/arm64 golang:1.17-alpine3.14 AS builder
+# https://github.com/edgexfoundry/app-functions-sdk-go/blob/main/app-service-template/Dockerfile
 
-WORKDIR /temp
+#build stage
+FROM --platform=linux/arm64 golang:1.23-alpine3.20 AS builder
 
-LABEL license="SPDX-License-Identifier: Apache-2.0"
-
-# Install dependencies
 RUN apk add --update --no-cache make git gcc libc-dev zeromq-dev libsodium-dev
-
-# Copy Go module files and download dependencies
-COPY go.mod .
-COPY go.sum .
-RUN go mod download
-
-# Copy the application code and build the service
-COPY . .
-RUN go build -o ./app-influx-mqtt
-
-# Final stage: Runtime container
-FROM --platform=linux/arm64 alpine:3.14 AS final
-
-# Install runtime dependencies
-RUN apk add --update --no-cache zeromq
-
-# Set up working directory
 WORKDIR /
 
-# Copy the built application binary and configuration resources
-COPY --from=builder /temp/app-influx-mqtt /app-influx-mqtt
+COPY go.mod .
+RUN go mod download
+
+COPY . .
+ARG MAKE="make build"
+RUN $MAKE
+
+#final stage
+FROM alpine:3.14
+# TODO: Change Copyright to your company if open sourcing or remove label
+LABEL license='SPDX-License-Identifier: Apache-2.0' copyright='Copyright (c) 2022: Intel'
+LABEL Name=gatemate-app-influx-mqtt Version=3.1_arm64
+
+# dumb-init is required as security-bootstrapper uses it in the entrypoint script
+RUN apk add --update --no-cache ca-certificates dumb-init zeromq
+# Ensure using latest versions of all installed packages to avoid any recent CVEs
+RUN apk --no-cache upgrade
+
 COPY ./res/ /res
-
-# Expose the port used by the service
-EXPOSE 59798
-
-# Set environment variables required by the application
 ENV EDGEX_SECURITY_SECRET_STORE=false
 
-# Entry point for the container
-ENTRYPOINT ["/app-influx-mqtt", "-cp=consul.http://edgex-core-consul:8500", "--registry", "--confdir=/res"]
+# TODO: set this port appropriatly as it is in the configuation.yaml
+EXPOSE 1337
+
+ENTRYPOINT ["/gatemate-app-influx-mqtt"]
+CMD ["-cp=keeper.http://edgex-core-keeper:59890", "--registry", "--confdir=/res"]

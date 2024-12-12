@@ -4,28 +4,28 @@
 [Service]
 BootTimeout = "30s"
 CheckInterval = "10s"
-Host = "localhost"
+Host = "192.168.0.35"
 ServerBindAddr = "" # if blank, uses default Go behavior https://golang.org/pkg/net/#Listen
-Port = 50002
+Port = 1337
 Protocol = "http"
 ReadMaxLimit = 100
 StartupMsg = "App service export to InfluxDB has Started"
 Timeout = "5s"
 
 [Registry]
-Host = "localhost"
+Host = "192.168.0.35"
 Port = 8500
 Type = "consul"
 
 [Clients]
   [Clients.CoreData]
   Protocol = "http"
-  Host = "localhost"
+  Host = "192.168.0.35"
   Port = 48080
 
   [Clients.Logging]
   Protocol = "http"
-  Host = "localhost"
+  Host = "192.168.0.35"
   Port = 48061
 
 [Binding]
@@ -35,7 +35,7 @@ SubscribeTopic="events"
 [MessageBus]
 Type = "zero"
     [MessageBus.SubscribeHost]
-        Host = "localhost"
+        Host = "192.168.0.35"
         Port = 5563
         Protocol = "tcp"
 
@@ -56,4 +56,3 @@ Topic = "edgex/EdgeXEvents"
           password = "password"
           cacert = ""
           clientcert = ""
-          clientkey = ""

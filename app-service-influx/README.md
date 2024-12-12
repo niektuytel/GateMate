@@ -17,24 +17,34 @@ Please note, this example assumes "Insecure Secrets" are being used (i.e. that a
 
 
 
-### Build app service influx image
+### Build app service influx image on the RPI
 - go mod tidy
-- docker build --platform linux/arm64 -t app-influx-mqtt:3.1_arm64 .
+- docker build -t app-influx-mqtt:3.1_arm64 .
  
 ### Define on docker compose the image 
 ```
 version: '3.8'
 services:
-  app-influx-mqtt:
+  gatemate-app-influx-mqtt-export:
     image: app-influx-mqtt:3.1_arm64
+    hostname: gatemate-app-influx-mqtt-export
     ports:
       - "59798:59798"
     environment:
       - EDGEX_SECURITY_SECRET_STORE=false
     depends_on:
-      - edgex-core-consul
+      consul:
+        condition: service_started
+        required: true
+      core-data:
+        condition: service_started
+        required: true
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    user: 2002:2001
     volumes:
-      - ./res:/res
+      - ../../GateMate/app-service-influx/res:/res
 ```
 
 
