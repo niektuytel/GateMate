@@ -1,9 +1,6 @@
 # GateMate
 With gate mate you can connect any connection and pass it trough other configured connections to parse data through
 
-## Setup device service for reading modbus data
-
-
 ## Setup export for app influx db:
 
 ### Build 'edgexfoundry/app-influxdb:2.3.0'
@@ -112,3 +109,13 @@ If there are exceptions try to remove it.
 
 ### References
 - https://docs.edgexfoundry.org/3.1/microservices/application/ApplicationServices/
+
+## Setup device service for reading modbus data
+- Check if the modbus ip is public and try to bind to it
+- When the plc/device is been binded on the modbus device see if you receive some data:  
+  `docker logs edgex-device-modbus`
+- Create a device profile, this explains how the data is been structured that will been received through the `edgex-device-modbus`. [see scipt for auto generating device profile file](./modbus/modbus_create_device_profile.py)
+- Connect device service with device profile (provision if needed)
+  Open the dashboard of edgex foundry on port 4000 and set this connection manually. 
+
+  Hard to say which values are important we can accept all properties then we should create a script that will bind them on the profile.
