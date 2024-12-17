@@ -1,81 +1,114 @@
 # GateMate
 With gate mate you can connect any connection and pass it trough other configured connections to parse data through
 
-## Data models:
-- Connections -> Represents connections to Modbus, OPC-UA, or other systems.
-  - Id (Unique INT)
-  - Name (VARCHAR 50 e.g. "Modbus_Sensor_1")
-  - Description (VARCHAR 1000: Optional description about the connection)
-  - Status (INT Enum: Active, Inactive, Error)
-  - ProtocolType (INT Enum: ModbusRTU, ModbusTCP, OPC_UA, Database)
-  - ProtocolSettings (TEXT)
-    - ModbusRTU: ```
-      {
-        "BaudRate": 9600,
-        "DataBits": 8,
-        "StopBits": 1,
-        "Parity": "None",
-        "SlaveAddress": 1
-      }```
-    - OPC-UA: ```
-      {
-        "EndpointURL": "opc.tcp://127.0.0.1",
-        "NodeID": "ns=2;s=MotorSpeed",
-        "SecurityPolicy": "Basic256"
-      }```
-    - Database: ```
-      {
-        "ConnectionString": "Server=.;Database=TestDB;",
-        "Authentication": "Integrated"
-      }```
-  - LastUpdated (DATETIME UTC: Timestamp of the last update)
-    
-- DataStreams -> Manages data transfer between connections
-  - Id (Unique INT)
-  - Name (VARCHAR 150 e.g. "Parse data from Modbus_Sensor_1 to Modbus_Server_2")
-  - Status (INT Enum: Active, Paused, Error)
-  - ReadConnectionId (INT FK)
-  - WriteConnectionId (INT FK)
-  - PollingIntervalMs (INT, Default=0): How often data is read (in milliseconds).
-  - ErrorRetries (INT, Default=0): Number of retries before marking the stream as errored.
-  - ErrorRetryDelayInSeconds (INT): Time to wait between retries (default = 5).
-  - IsSpecificTagTransfer (BOOLEAN): When ReadTag/WriteTag is null or empty
-  - ReadTag (VARCHAR 100, Nullable): Optional tag or identifier for reading.
-  - WriteTag (VARCHAR 100, Nullable): Optional tag or identifier for writing.
-  - LastUpdated (DATETIME UTC)
-    
-- Logs -> Use this for tracking issues ower system diagnostics.
-  - Id (Unique INT)
-  - LogType (INT Enum: Info, Warning, Error)
-  - Timestamp (DATETIME UTC): When the event occurred.
-  - DataStreamId (INT FK, Nullable): Optional link to a data stream.
-  - ConnectionId (INT FK, Nullable): Optional link to a connection.
-  - Message (VARCHAR 1000): Description of the event.
+## Setup device service for reading modbus data
 
-## Storage
-We use a embedded database SQLite for storing data.
 
-## Logging Keep limited
-Before the logging goes into a WildGrowing table in rows we set a Maximum row.
-Use for now a SQLite Triggers see the example: 
+## Setup export for app influx db:
+
+### Build 'edgexfoundry/app-influxdb:2.3.0'
+- `git clone https://github.com/yiqisoft/edgex-app-influxdb-export` (doc: https://www.yiqisoft.cn/blogs/edgex/519.html)
+- `make build`
+- `docker build . -t edgexfoundry/app-influxdb:2.3.0`
+
+### Define application that van export data to influxDB
+We want to send the incomming data to influxDB in this case over MQTT (faster protocol then HTTP)    
+- Set following compose file with https://github.com/edgexfoundry/edgex-compose  
+i.e. `make gen no-secty arm64 ds-modbus ds-virtual mqtt-broker` and update it with following services. (NOTE: remove/edit generated mqtt-broker)
 ```
-CREATE TRIGGER MaintainLogLimit
-AFTER INSERT ON Logs
-BEGIN
-    DELETE FROM Logs
-    WHERE Id IN (
-        SELECT Id FROM Logs ORDER BY Timestamp ASC LIMIT (SELECT COUNT(*) - 1000 FROM Logs)
-    );
-END;
+name: edgex
+services:
+  app-service-influxdb-export:
+    image: edgexfoundry/app-influxdb:2.3.0
+    ports:
+      - 127.0.0.1:59780:59780/tcp
+    container_name: edgex-app-influxdb-export
+    hostname: edgex-app-influxdb-export
+    depends_on:
+      consul:
+        condition: service_started
+      core-data:
+        condition: service_started
+    environment:
+      CLIENTS_CORE_COMMAND_HOST: edgex-core-command
+      CLIENTS_CORE_DATA_HOST: edgex-core-data
+      CLIENTS_CORE_METADATA_HOST: edgex-core-metadata
+      CLIENTS_SUPPORT_NOTIFICATIONS_HOST: edgex-support-notifications
+      CLIENTS_SUPPORT_SCHEDULER_HOST: edgex-support-scheduler
+      DATABASES_PRIMARY_HOST: edgex-redis
+      EDGEX_SECURITY_SECRET_STORE: "false"
+      MESSAGEQUEUE_HOST: edgex-redis
+      REGISTRY_HOST: edgex-core-consul
+      SERVICE_HOST: edgex-app-influxdb-export
+      TRIGGER_EDGEXMESSAGEBUS_PUBLISHHOST_HOST: edgex-redis
+      TRIGGER_EDGEXMESSAGEBUS_SUBSCRIBEHOST_HOST: edgex-redis
+      MQTTCONFIG_BROKERADDRESS: edgex-mqtt-broker:1883
+    read_only: true
+    restart: always
+    networks:
+      - edgex-network
+    security_opt:
+      - no-new-privileges:true
+    user: 2002:2001
+  mqtt-broker:
+    command:
+      - /usr/sbin/mosquitto
+      - -v
+      - -c
+      - /mosquitto-no-auth.conf
+    container_name: edgex-mqtt-broker
+    hostname: edgex-mqtt-broker
+    image: eclipse-mosquitto:2.0.18
+    ports:
+      - "1884:1884"
+    networks:
+      - edgex-network
+    read_only: true
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    user: 2002:2001
+
+  telegraf:
+    image: telegraf:latest
+    container_name: telegraf
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /home/pi/repo/edgex-compose/compose-builder/config/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    restart: unless-stopped
+    depends_on:
+      mqtt-broker:
+        condition: service_started
+    networks:
+      - edgex-network
+
+``` 
+- Telegraf configure file is readed from the location `/home/pi/repo/edgex-compose/compose-builder/config/telegraf.conf` edit this location if needed and create the `telegraf.conf` with following content
+```
+[[inputs.mqtt_consumer]]
+  servers = ["tcp://edgex-mqtt-broker:1883"]
+  topics = [
+    "telegraf/host01/cpu",
+    "telegraf/+/mem",
+    "sensors/#",
+    "edgex/EdgeXEvents"
+  ]
+  data_format = "influx"
+
+[[outputs.influxdb_v2]]
+  urls = ["https://eu-central-1-1.aws.cloud2.influxdata.com"]
+  token = "v72jtcinkYwKe1lL_VZuv5Eqs7E5kk4RkwL6gNg-l7rPNpQLtWn-eZK23Idf6H-sQkoKlKmHBoSY3sPqZBB0mw=="
+  organization = "GateMate"
+  bucket = "Machinova_Test"
+  timeout = "10s"
 ```
 
-## The Hybride caching approach
-The hybrid approach caching data in memory and writing to a database only when persistence is required.
+### When not receiving data in your influx bucket check logs on:
+- `docker logs telegraf`
+- `docker logs mqtt-broker`
+- `docker logs app-service-influxdb-export`
 
-### Data Buffering in Gateways:
-Use memory for short-term data retention before sending it to the cloud.
-Persist critical data (e.g., alarms or trends) locally in a database if the cloud is temporarily unreachable.
+If there are exceptions try to remove it.
 
-### Selective Persistence:
-Not all data is stored—only selected metrics or events are logged, reducing overhead.
-
+### References
+- https://docs.edgexfoundry.org/3.1/microservices/application/ApplicationServices/
