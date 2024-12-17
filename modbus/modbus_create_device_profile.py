@@ -96,4 +96,4 @@ if __name__ == "__main__":
 
     print(f"Device profile generated: {output_file}")
     print(f"Execute the following curl command in this location to set it on EdgeX Foundry: (or paste into Postman and define the file location)")
-    print(f"curl -X POST -F 'file=@./{output_file}' http://192.168.8.128:59881/api/v2/deviceprofile/uploadfile")
+    print(f"curl -X POST -F 'file=@./{output_file}' http://192.168.8.128:59881/api/v3/deviceprofile/uploadfile")

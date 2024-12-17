@@ -288,14 +288,10 @@ services:
       SERVICE_HOST: edgex-core-metadata
     hostname: edgex-core-metadata
     image: edgexfoundry/core-metadata-arm64:3.1.1
-    networks:
-      edgex-network: null
     ports:
-      - mode: ingress
-        host_ip: 127.0.0.1
-        target: 59881
-        published: "59881"
-        protocol: tcp
+      - "59881:59881"
+    networks:
+      - edgex-network
     read_only: true
     restart: always
     security_opt:

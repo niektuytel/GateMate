@@ -112,9 +112,15 @@ If there are exceptions try to remove it.
 
 ## Setup device service for reading modbus data
 - Check if the modbus ip is public and try to bind to it
+- make sure edgexfoundry/core-metadata-arm is accesable from outside the docker container by removing the `127.0.0.1`
+- 
 - When the plc/device is been binded on the modbus device see if you receive some data:  
   `docker logs edgex-device-modbus`
 - Create a device profile, this explains how the data is been structured that will been received through the `edgex-device-modbus`. [see scipt for auto generating device profile file](./modbus/modbus_create_device_profile.py)
+
+TODO: something wrong with v3 api upload: https://docs.edgexfoundry.org/3.1/walk-through/Ch-WalkthroughDeviceProfile/
+
+check if doc is in line with code
 - Connect device service with device profile (provision if needed)
   Open the dashboard of edgex foundry on port 4000 and set this connection manually. 
 
