@@ -119,3 +119,6 @@ If there are exceptions try to remove it.
   Open the dashboard of edgex foundry on port 4000 and set this connection manually. 
 
   Hard to say which values are important we can accept all properties then we should create a script that will bind them on the profile.
+
+
+## TODO: Set received Influx data on grafana
