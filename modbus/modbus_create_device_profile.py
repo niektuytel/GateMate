@@ -1,6 +1,13 @@
 import yaml
 import re
 
+# Group similar resources getting bulked
+# curl -X GET http://localhost:59882/api/v3/device/name/<DEVICE_NAME>/command/Readfrei_group
+GROUPS = {
+    "frei_group": ["frei_9", "frei_10", "frei_11", "frei_12", "frei_13", "frei_14", "frei_15"]
+}
+
+
 def parse_modbus_data(file_path):
     modbus_data = {}
     with open(file_path, 'r') as file:
@@ -14,6 +21,9 @@ def parse_modbus_data(file_path):
 def sanitize_name(name):
     return re.sub(r'[^a-zA-Z0-9_]', '', name)
 
+def clean_value(address):
+    return address.replace("\xC2", "").replace("_", "").strip()
+
 def determine_value_type(address):
     if address.startswith("w"):
         return "Uint16"  # "Word" typically means 16-bit unsigned integer
@@ -21,7 +31,6 @@ def determine_value_type(address):
         return "Uint32"  # "Long Word" typically means 32-bit unsigned integer
     return "String"
 
-# Create device profile structure
 def generate_device_profile(manufacturer, modbus_data):
     device_profile = {
         "name": f"{manufacturer}_DeviceProfile",
@@ -35,45 +44,44 @@ def generate_device_profile(manufacturer, modbus_data):
 
     for name, address in modbus_data.items():
         sanitized_name = sanitize_name(name)
+        cleaned_address = clean_value(address)
         resource = {
             "name": sanitized_name,
-            "description": f"Modbus register {address}",
+            "description": f"Modbus register {cleaned_address}",
             "isHidden": False,
-            "tag": "",
             "attributes": {
-                "address": address
+                "address": cleaned_address
             },
             "properties": {
-                "valueType": determine_value_type(address),
-                "readWrite": "RW",
-                "units": "",
-                "minimum": "",
-                "maximum": "",
+                "valueType": determine_value_type(cleaned_address),
+                "readWrite": "RW",  # Ensure compatibility, probably we will only use Read just to be sure
+                "units": "",  # Optional, but must be valid if provided
+                "minimum": None,  # Use None for optional values
+                "maximum": None,
                 "defaultValue": "",
-                "mask": "",
-                "shift": "",
-                "scale": "",
-                "offset": "",
-                "base": "",
+                "mask": None,
+                "shift": None,
+                "scale": None,
+                "offset": None,
+                "base": None,
                 "assertion": "",
                 "mediaType": ""
             }
         }
         device_profile["deviceResources"].append(resource)
 
-    # Example of adding device commands for each resource
-    for name in modbus_data.keys():
-        sanitized_name = sanitize_name(name)
+    return device_profile
+
+def try_add_device_commands(device_profile):
+    for group_name, resource_names in GROUPS.items():
+        sanitized_group_name = sanitize_name(group_name)
         command = {
-            "name": f"ReadWrite{sanitized_name}Value",
+            "name": f"Read{sanitized_group_name}",
             "isHidden": False,
-            "readWrite": "RW",
+            "readWrite": "R",
             "resourceOperations": [
-                {
-                    "deviceResource": sanitized_name,
-                    "defaultValue": "",
-                    "mappings": {}
-                }
+                {"deviceResource": sanitize_name(resource_name), "defaultValue": "", "mappings": {}}
+                for resource_name in resource_names
             ]
         }
         device_profile["deviceCommands"].append(command)
@@ -87,7 +95,9 @@ if __name__ == "__main__":
     company = sanitize_name(company.replace(" ", "_"))
 
     modbus_data = parse_modbus_data(input_file)
+    
     device_profile = generate_device_profile(company, modbus_data)
+    device_profile = try_add_device_commands(device_profile)
 
     # Output the YAML profile
     output_file = "ModbusDeviceProfile.yml"

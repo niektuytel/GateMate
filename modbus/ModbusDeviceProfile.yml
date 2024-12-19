@@ -1,6 +1,6 @@
-name: Machinova_Test_DeviceProfile
+name: MachinovaTest_DeviceProfile
 description: Device profile generated from Modbus data
-manufacturer: Machinova_Test
+manufacturer: MachinovaTest
 model: ModbusModel
 labels:
 - modbus
@@ -9,7021 +9,4966 @@ deviceResources:
 - name: Status_Homing
   description: Modbus register w1000
   isHidden: false
-  tag: ''
   attributes:
     address: w1000
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Status_Pick_and_Place
   description: Modbus register w1001
   isHidden: false
-  tag: ''
   attributes:
     address: w1001
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Status_CanBus
   description: Modbus register w1002
   isHidden: false
-  tag: ''
   attributes:
     address: w1002
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Status_Pick
   description: Modbus register w1003
   isHidden: false
-  tag: ''
   attributes:
     address: w1003
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Status_Place
   description: Modbus register w1004
   isHidden: false
-  tag: ''
   attributes:
     address: w1004
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Status_TrayChange
   description: Modbus register w1005
   isHidden: false
-  tag: ''
   attributes:
     address: w1005
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Status_Matrix
   description: Modbus register w1006
   isHidden: false
-  tag: ''
   attributes:
     address: w1006
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Status_Pusher
   description: Modbus register w1007
   isHidden: false
-  tag: ''
   attributes:
     address: w1007
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_1
   description: Modbus register w1008
   isHidden: false
-  tag: ''
   attributes:
     address: w1008
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_2
   description: Modbus register w1009
   isHidden: false
-  tag: ''
   attributes:
     address: w1009
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: DayCounter
   description: Modbus register lw1010
   isHidden: false
-  tag: ''
   attributes:
     address: lw1010
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TotalCounter
   description: Modbus register lw1012
   isHidden: false
-  tag: ''
   attributes:
     address: lw1012
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: CurrentBatchCounter
   description: Modbus register lw1014
   isHidden: false
-  tag: ''
   attributes:
     address: lw1014
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: BatchTargetQuantity
   description: Modbus register lw1016
   isHidden: false
-  tag: ''
   attributes:
     address: lw1016
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: To_PLC_Flags
   description: Modbus register w1018
   isHidden: false
-  tag: ''
   attributes:
     address: w1018
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: From_PLC_Flags
   description: Modbus register w1019
   isHidden: false
-  tag: ''
   attributes:
     address: w1019
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Actual_Pos_X
   description: Modbus register w1020
   isHidden: false
-  tag: ''
   attributes:
     address: w1020
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Actual_Pos_Y
   description: Modbus register w1021
   isHidden: false
-  tag: ''
   attributes:
     address: w1021
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Actual_Pick_Row
   description: Modbus register w1022
   isHidden: false
-  tag: ''
   attributes:
     address: w1022
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Actual_PickPos
   description: Modbus register w1023
   isHidden: false
-  tag: ''
   attributes:
     address: w1023
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Actual_PlacePos_Place_Row_1
   description: Modbus register w1024
   isHidden: false
-  tag: ''
   attributes:
     address: w1024
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Actual_PlacePos_Place_Row_2
   description: Modbus register w1025
   isHidden: false
-  tag: ''
   attributes:
     address: w1025
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Actual_PlacePos_Place_Row_3
   description: Modbus register w1026
   isHidden: false
-  tag: ''
   attributes:
     address: w1026
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_3
   description: Modbus register w1027
   isHidden: false
-  tag: ''
   attributes:
     address: w1027
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_4
   description: Modbus register w1028
   isHidden: false
-  tag: ''
   attributes:
     address: w1028
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_5
   description: Modbus register w1029
   isHidden: false
-  tag: ''
   attributes:
     address: w1029
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Pick_Type
   description: Modbus register w1030
   isHidden: false
-  tag: ''
   attributes:
     address: w1030
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Pick_Height
   description: Modbus register w1031
   isHidden: false
-  tag: ''
   attributes:
     address: w1031
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Place_Height
   description: Modbus register w1032
   isHidden: false
-  tag: ''
   attributes:
     address: w1032
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Pick_First_Row_X
   description: Modbus register w1033
   isHidden: false
-  tag: ''
   attributes:
     address: w1033
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Pick_First_Row_Y
   description: Modbus register w1034
   isHidden: false
-  tag: ''
   attributes:
     address: w1034
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Pick_Last_Row_X
   description: Modbus register w1035
   isHidden: false
-  tag: ''
   attributes:
     address: w1035
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Pick_Last_Row_Y
   description: Modbus register w1036
   isHidden: false
-  tag: ''
   attributes:
     address: w1036
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Nr_Of_Pick_Rows
   description: Modbus register w1037
   isHidden: false
-  tag: ''
   attributes:
     address: w1037
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Nr_Of_Pick_Positions
   description: Modbus register w1038
   isHidden: false
-  tag: ''
   attributes:
     address: w1038
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_6
   description: Modbus register w1039
   isHidden: false
-  tag: ''
   attributes:
     address: w1039
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_7
   description: Modbus register w1040
   isHidden: false
-  tag: ''
   attributes:
     address: w1040
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_8
   description: Modbus register w1041
   isHidden: false
-  tag: ''
   attributes:
     address: w1041
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Place_First_Row_X
   description: Modbus register w1042
   isHidden: false
-  tag: ''
   attributes:
     address: w1042
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Place_First_Row_Y
   description: Modbus register w1043
   isHidden: false
-  tag: ''
   attributes:
     address: w1043
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Place_Last_Row_X
   description: Modbus register w1044
   isHidden: false
-  tag: ''
   attributes:
     address: w1044
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Place_Last_Row_Y
   description: Modbus register w1045
   isHidden: false
-  tag: ''
   attributes:
     address: w1045
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Nr_Of_Place_Rows
   description: Modbus register w1046
   isHidden: false
-  tag: ''
   attributes:
     address: w1046
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Nr_Of_Place_Positions
   description: Modbus register w1047
   isHidden: false
-  tag: ''
   attributes:
     address: w1047
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_9
   description: Modbus register w1048
   isHidden: false
-  tag: ''
   attributes:
     address: w1048
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_10
   description: Modbus register w1049
   isHidden: false
-  tag: ''
   attributes:
     address: w1049
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_11
   description: Modbus register w1050
   isHidden: false
-  tag: ''
   attributes:
     address: w1050
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_12
   description: Modbus register w1051
   isHidden: false
-  tag: ''
   attributes:
     address: w1051
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_13
   description: Modbus register w1052
   isHidden: false
-  tag: ''
   attributes:
     address: w1052
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_14
   description: Modbus register w1053
   isHidden: false
-  tag: ''
   attributes:
     address: w1053
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_15
   description: Modbus register w1054
   isHidden: false
-  tag: ''
   attributes:
     address: w1054
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_in_Use
   description: Modbus register w1055
   isHidden: false
-  tag: ''
   attributes:
     address: w1055
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_01
   description: Modbus register w1056
   isHidden: false
-  tag: ''
   attributes:
     address: w1056
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_02
   description: Modbus register w1057
   isHidden: false
-  tag: ''
   attributes:
     address: w1057
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_03
   description: Modbus register w1058
   isHidden: false
-  tag: ''
   attributes:
     address: w1058
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_04
   description: Modbus register w1059
   isHidden: false
-  tag: ''
   attributes:
     address: w1059
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_05
   description: Modbus register w1060
   isHidden: false
-  tag: ''
   attributes:
     address: w1060
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_06
   description: Modbus register w1061
   isHidden: false
-  tag: ''
   attributes:
     address: w1061
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_07
   description: Modbus register w1062
   isHidden: false
-  tag: ''
   attributes:
     address: w1062
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_08
   description: Modbus register w1063
   isHidden: false
-  tag: ''
   attributes:
     address: w1063
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_09
   description: Modbus register w1064
   isHidden: false
-  tag: ''
   attributes:
     address: w1064
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_10
   description: Modbus register w1065
   isHidden: false
-  tag: ''
   attributes:
     address: w1065
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_11
   description: Modbus register w1066
   isHidden: false
-  tag: ''
   attributes:
     address: w1066
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Grippers_In_Use_PickPos_12
   description: Modbus register w1067
   isHidden: false
-  tag: ''
   attributes:
     address: w1067
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_16
   description: Modbus register w1068
   isHidden: false
-  tag: ''
   attributes:
     address: w1068
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_17
   description: Modbus register w1069
   isHidden: false
-  tag: ''
   attributes:
     address: w1069
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_01
   description: Modbus register lw1070
   isHidden: false
-  tag: ''
   attributes:
     address: lw1070
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_02
   description: Modbus register lw1072
   isHidden: false
-  tag: ''
   attributes:
     address: lw1072
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_03
   description: Modbus register lw1074
   isHidden: false
-  tag: ''
   attributes:
     address: lw1074
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_04
   description: Modbus register lw1076
   isHidden: false
-  tag: ''
   attributes:
     address: lw1076
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_05
   description: Modbus register lw1078
   isHidden: false
-  tag: ''
   attributes:
     address: lw1078
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_06
   description: Modbus register lw1080
   isHidden: false
-  tag: ''
   attributes:
     address: lw1080
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_07
   description: Modbus register lw1082
   isHidden: false
-  tag: ''
   attributes:
     address: lw1082
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_08
   description: Modbus register lw1084
   isHidden: false
-  tag: ''
   attributes:
     address: lw1084
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_09
   description: Modbus register lw1086
   isHidden: false
-  tag: ''
   attributes:
     address: lw1086
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_10
   description: Modbus register lw1088
   isHidden: false
-  tag: ''
   attributes:
     address: lw1088
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_11
   description: Modbus register lw1090
   isHidden: false
-  tag: ''
   attributes:
     address: lw1090
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PickPos_12
   description: Modbus register lw1092
   isHidden: false
-  tag: ''
   attributes:
     address: lw1092
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_01
   description: Modbus register lw1094
   isHidden: false
-  tag: ''
   attributes:
     address: lw1094
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_02
   description: Modbus register lw1096
   isHidden: false
-  tag: ''
   attributes:
     address: lw1096
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_03
   description: Modbus register lw1098
   isHidden: false
-  tag: ''
   attributes:
     address: lw1098
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_04
   description: Modbus register lw1100
   isHidden: false
-  tag: ''
   attributes:
     address: lw1100
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_05
   description: Modbus register lw1102
   isHidden: false
-  tag: ''
   attributes:
     address: lw1102
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_06
   description: Modbus register lw1104
   isHidden: false
-  tag: ''
   attributes:
     address: lw1104
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_07
   description: Modbus register lw1106
   isHidden: false
-  tag: ''
   attributes:
     address: lw1106
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_08
   description: Modbus register lw1108
   isHidden: false
-  tag: ''
   attributes:
     address: lw1108
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_09
   description: Modbus register lw1110
   isHidden: false
-  tag: ''
   attributes:
     address: lw1110
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_10
   description: Modbus register lw1112
   isHidden: false
-  tag: ''
   attributes:
     address: lw1112
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_11
   description: Modbus register lw1114
   isHidden: false
-  tag: ''
   attributes:
     address: lw1114
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PickPos_12
   description: Modbus register lw1116
   isHidden: false
-  tag: ''
   attributes:
     address: lw1116
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_01
   description: Modbus register lw1118
   isHidden: false
-  tag: ''
   attributes:
     address: lw1118
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_02
   description: Modbus register lw1120
   isHidden: false
-  tag: ''
   attributes:
     address: lw1120
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_03
   description: Modbus register lw1122
   isHidden: false
-  tag: ''
   attributes:
     address: lw1122
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_04
   description: Modbus register lw1124
   isHidden: false
-  tag: ''
   attributes:
     address: lw1124
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_05
   description: Modbus register lw1126
   isHidden: false
-  tag: ''
   attributes:
     address: lw1126
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_06
   description: Modbus register lw1128
   isHidden: false
-  tag: ''
   attributes:
     address: lw1128
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_07
   description: Modbus register lw1130
   isHidden: false
-  tag: ''
   attributes:
     address: lw1130
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_08
   description: Modbus register lw1132
   isHidden: false
-  tag: ''
   attributes:
     address: lw1132
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_09
   description: Modbus register lw1134
   isHidden: false
-  tag: ''
   attributes:
     address: lw1134
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_10
   description: Modbus register lw1136
   isHidden: false
-  tag: ''
   attributes:
     address: lw1136
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_11
   description: Modbus register lw1138
   isHidden: false
-  tag: ''
   attributes:
     address: lw1138
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PickPos_12
   description: Modbus register lw1140
   isHidden: false
-  tag: ''
   attributes:
     address: lw1140
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_01
   description: Modbus register lw1142
   isHidden: false
-  tag: ''
   attributes:
     address: lw1142
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_02
   description: Modbus register lw1144
   isHidden: false
-  tag: ''
   attributes:
     address: lw1144
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_03
   description: Modbus register lw1146
   isHidden: false
-  tag: ''
   attributes:
     address: lw1146
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_04
   description: Modbus register lw1148
   isHidden: false
-  tag: ''
   attributes:
     address: lw1148
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_05
   description: Modbus register lw1150
   isHidden: false
-  tag: ''
   attributes:
     address: lw1150
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_06
   description: Modbus register lw1152
   isHidden: false
-  tag: ''
   attributes:
     address: lw1152
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_07
   description: Modbus register lw1154
   isHidden: false
-  tag: ''
   attributes:
     address: lw1154
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_08
   description: Modbus register lw1156
   isHidden: false
-  tag: ''
   attributes:
     address: lw1156
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_09
   description: Modbus register lw1158
   isHidden: false
-  tag: ''
   attributes:
     address: lw1158
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_10
   description: Modbus register lw1160
   isHidden: false
-  tag: ''
   attributes:
     address: lw1160
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_11
   description: Modbus register lw1162
   isHidden: false
-  tag: ''
   attributes:
     address: lw1162
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PickPos_12
   description: Modbus register lw1164
   isHidden: false
-  tag: ''
   attributes:
     address: lw1164
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_01
   description: Modbus register lw1166
   isHidden: false
-  tag: ''
   attributes:
     address: lw1166
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_02
   description: Modbus register lw1168
   isHidden: false
-  tag: ''
   attributes:
     address: lw1168
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_03
   description: Modbus register lw1170
   isHidden: false
-  tag: ''
   attributes:
     address: lw1170
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_04
   description: Modbus register lw1172
   isHidden: false
-  tag: ''
   attributes:
     address: lw1172
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_05
   description: Modbus register lw1174
   isHidden: false
-  tag: ''
   attributes:
     address: lw1174
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_06
   description: Modbus register lw1176
   isHidden: false
-  tag: ''
   attributes:
     address: lw1176
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_07
   description: Modbus register lw1178
   isHidden: false
-  tag: ''
   attributes:
     address: lw1178
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_08
   description: Modbus register lw1180
   isHidden: false
-  tag: ''
   attributes:
     address: lw1180
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_09
   description: Modbus register lw1182
   isHidden: false
-  tag: ''
   attributes:
     address: lw1182
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_10
   description: Modbus register lw1184
   isHidden: false
-  tag: ''
   attributes:
     address: lw1184
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_11
   description: Modbus register lw1186
   isHidden: false
-  tag: ''
   attributes:
     address: lw1186
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PickPos_12
   description: Modbus register lw1188
   isHidden: false
-  tag: ''
   attributes:
     address: lw1188
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_01
   description: Modbus register lw1190
   isHidden: false
-  tag: ''
   attributes:
     address: lw1190
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_02
   description: Modbus register lw1192
   isHidden: false
-  tag: ''
   attributes:
     address: lw1192
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_03
   description: Modbus register lw1194
   isHidden: false
-  tag: ''
   attributes:
     address: lw1194
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_04
   description: Modbus register lw1196
   isHidden: false
-  tag: ''
   attributes:
     address: lw1196
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_05
   description: Modbus register lw1198
   isHidden: false
-  tag: ''
   attributes:
     address: lw1198
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_06
   description: Modbus register lw1200
   isHidden: false
-  tag: ''
   attributes:
     address: lw1200
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_07
   description: Modbus register lw1202
   isHidden: false
-  tag: ''
   attributes:
     address: lw1202
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_08
   description: Modbus register lw1204
   isHidden: false
-  tag: ''
   attributes:
     address: lw1204
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_09
   description: Modbus register lw1206
   isHidden: false
-  tag: ''
   attributes:
     address: lw1206
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_10
   description: Modbus register lw1208
   isHidden: false
-  tag: ''
   attributes:
     address: lw1208
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_11
   description: Modbus register lw1210
   isHidden: false
-  tag: ''
   attributes:
     address: lw1210
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PickPos_12
   description: Modbus register lw1212
   isHidden: false
-  tag: ''
   attributes:
     address: lw1212
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_01
   description: Modbus register lw1214
   isHidden: false
-  tag: ''
   attributes:
     address: lw1214
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_02
   description: Modbus register lw1216
   isHidden: false
-  tag: ''
   attributes:
     address: lw1216
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_03
   description: Modbus register lw1218
   isHidden: false
-  tag: ''
   attributes:
     address: lw1218
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_04
   description: Modbus register lw1220
   isHidden: false
-  tag: ''
   attributes:
     address: lw1220
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_05
   description: Modbus register lw1222
   isHidden: false
-  tag: ''
   attributes:
     address: lw1222
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_06
   description: Modbus register lw1224
   isHidden: false
-  tag: ''
   attributes:
     address: lw1224
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_07
   description: Modbus register lw1226
   isHidden: false
-  tag: ''
   attributes:
     address: lw1226
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_08
   description: Modbus register lw1228
   isHidden: false
-  tag: ''
   attributes:
     address: lw1228
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_09
   description: Modbus register lw1230
   isHidden: false
-  tag: ''
   attributes:
     address: lw1230
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_10
   description: Modbus register lw1232
   isHidden: false
-  tag: ''
   attributes:
     address: lw1232
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_11
   description: Modbus register lw1234
   isHidden: false
-  tag: ''
   attributes:
     address: lw1234
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PickPos_12
   description: Modbus register lw1236
   isHidden: false
-  tag: ''
   attributes:
     address: lw1236
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_01
   description: Modbus register lw1238
   isHidden: false
-  tag: ''
   attributes:
     address: lw1238
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_02
   description: Modbus register lw1240
   isHidden: false
-  tag: ''
   attributes:
     address: lw1240
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_03
   description: Modbus register lw1242
   isHidden: false
-  tag: ''
   attributes:
     address: lw1242
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_04
   description: Modbus register lw1244
   isHidden: false
-  tag: ''
   attributes:
     address: lw1244
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_05
   description: Modbus register lw1246
   isHidden: false
-  tag: ''
   attributes:
     address: lw1246
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_06
   description: Modbus register lw1248
   isHidden: false
-  tag: ''
   attributes:
     address: lw1248
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_07
   description: Modbus register lw1250
   isHidden: false
-  tag: ''
   attributes:
     address: lw1250
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_08
   description: Modbus register lw1252
   isHidden: false
-  tag: ''
   attributes:
     address: lw1252
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_09
   description: Modbus register lw1254
   isHidden: false
-  tag: ''
   attributes:
     address: lw1254
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_10
   description: Modbus register lw1256
   isHidden: false
-  tag: ''
   attributes:
     address: lw1256
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_11
   description: Modbus register lw1258
   isHidden: false
-  tag: ''
   attributes:
     address: lw1258
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PickPos_12
   description: Modbus register lw1260
   isHidden: false
-  tag: ''
   attributes:
     address: lw1260
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_18
   description: Modbus register w1262
   isHidden: false
-  tag: ''
   attributes:
     address: w1262
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_19
   description: Modbus register w1263
   isHidden: false
-  tag: ''
   attributes:
     address: w1263
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_20
   description: Modbus register w1264
   isHidden: false
-  tag: ''
   attributes:
     address: w1264
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_21
   description: Modbus register w1265
   isHidden: false
-  tag: ''
   attributes:
     address: w1265
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_22
   description: Modbus register w1266
   isHidden: false
-  tag: ''
   attributes:
     address: w1266
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_23
   description: Modbus register w1267
   isHidden: false
-  tag: ''
   attributes:
     address: w1267
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_24
   description: Modbus register w1268
   isHidden: false
-  tag: ''
   attributes:
     address: w1268
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: frei_25
   description: Modbus register w1269
   isHidden: false
-  tag: ''
   attributes:
     address: w1269
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PlacePos_1
   description: Modbus register lw1270
   isHidden: false
-  tag: ''
   attributes:
     address: lw1270
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PlacePos_2
   description: Modbus register lw1272
   isHidden: false
-  tag: ''
   attributes:
     address: lw1272
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PlacePos_3
   description: Modbus register lw1274
   isHidden: false
-  tag: ''
   attributes:
     address: lw1274
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PlacePos_4
   description: Modbus register lw1276
   isHidden: false
-  tag: ''
   attributes:
     address: lw1276
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M1_PlacePos_5
   description: Modbus register lw1278
   isHidden: false
-  tag: ''
   attributes:
     address: lw1278
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PlacePos_1
   description: Modbus register lw1280
   isHidden: false
-  tag: ''
   attributes:
     address: lw1280
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PlacePos_2
   description: Modbus register lw1282
   isHidden: false
-  tag: ''
   attributes:
     address: lw1282
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PlacePos_3
   description: Modbus register lw1284
   isHidden: false
-  tag: ''
   attributes:
     address: lw1284
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PlacePos_4
   description: Modbus register lw1286
   isHidden: false
-  tag: ''
   attributes:
     address: lw1286
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M2_PlacePos_5
   description: Modbus register lw1288
   isHidden: false
-  tag: ''
   attributes:
     address: lw1288
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PlacePos_1
   description: Modbus register lw1290
   isHidden: false
-  tag: ''
   attributes:
     address: lw1290
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PlacePos_2
   description: Modbus register lw1292
   isHidden: false
-  tag: ''
   attributes:
     address: lw1292
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PlacePos_3
   description: Modbus register lw1294
   isHidden: false
-  tag: ''
   attributes:
     address: lw1294
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PlacePos_4
   description: Modbus register lw1296
   isHidden: false
-  tag: ''
   attributes:
     address: lw1296
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M3_PlacePos_5
   description: Modbus register lw1298
   isHidden: false
-  tag: ''
   attributes:
     address: lw1298
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PlacePos_1
   description: Modbus register lw1300
   isHidden: false
-  tag: ''
   attributes:
     address: lw1300
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PlacePos_2
   description: Modbus register lw1302
   isHidden: false
-  tag: ''
   attributes:
     address: lw1302
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PlacePos_3
   description: Modbus register lw1304
   isHidden: false
-  tag: ''
   attributes:
     address: lw1304
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PlacePos_4
   description: Modbus register lw1306
   isHidden: false
-  tag: ''
   attributes:
     address: lw1306
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M4_PlacePos_5
   description: Modbus register lw1308
   isHidden: false
-  tag: ''
   attributes:
     address: lw1308
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PlacePos_1
   description: Modbus register lw1310
   isHidden: false
-  tag: ''
   attributes:
     address: lw1310
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PlacePos_2
   description: Modbus register lw1312
   isHidden: false
-  tag: ''
   attributes:
     address: lw1312
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PlacePos_3
   description: Modbus register lw1314
   isHidden: false
-  tag: ''
   attributes:
     address: lw1314
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PlacePos_4
   description: Modbus register lw1316
   isHidden: false
-  tag: ''
   attributes:
     address: lw1316
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M5_PlacePos_5
   description: Modbus register lw1318
   isHidden: false
-  tag: ''
   attributes:
     address: lw1318
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PlacePos_1
   description: Modbus register lw1320
   isHidden: false
-  tag: ''
   attributes:
     address: lw1320
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PlacePos_2
   description: Modbus register lw1322
   isHidden: false
-  tag: ''
   attributes:
     address: lw1322
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PlacePos_3
   description: Modbus register lw1324
   isHidden: false
-  tag: ''
   attributes:
     address: lw1324
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PlacePos_4
   description: Modbus register lw1326
   isHidden: false
-  tag: ''
   attributes:
     address: lw1326
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M6_PlacePos_5
   description: Modbus register lw1328
   isHidden: false
-  tag: ''
   attributes:
     address: lw1328
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PlacePos_1
   description: Modbus register lw1330
   isHidden: false
-  tag: ''
   attributes:
     address: lw1330
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PlacePos_2
   description: Modbus register lw1332
   isHidden: false
-  tag: ''
   attributes:
     address: lw1332
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PlacePos_3
   description: Modbus register lw1334
   isHidden: false
-  tag: ''
   attributes:
     address: lw1334
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PlacePos_4
   description: Modbus register lw1336
   isHidden: false
-  tag: ''
   attributes:
     address: lw1336
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M7_PlacePos_5
   description: Modbus register lw1338
   isHidden: false
-  tag: ''
   attributes:
     address: lw1338
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PlacePos_1
   description: Modbus register lw1340
   isHidden: false
-  tag: ''
   attributes:
     address: lw1340
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PlacePos_2
   description: Modbus register lw1342
   isHidden: false
-  tag: ''
   attributes:
     address: lw1342
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PlacePos_3
   description: Modbus register lw1344
   isHidden: false
-  tag: ''
   attributes:
     address: lw1344
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PlacePos_4
   description: Modbus register lw1346
   isHidden: false
-  tag: ''
   attributes:
     address: lw1346
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Gripper_M8_PlacePos_5
   description: Modbus register lw1348
   isHidden: false
-  tag: ''
   attributes:
     address: lw1348
   properties:
     valueType: Uint32
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_01
   description: Modbus register w1350
   isHidden: false
-  tag: ''
   attributes:
     address: w1350
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_02
   description: Modbus register w1351
   isHidden: false
-  tag: ''
   attributes:
     address: w1351
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_03
   description: Modbus register w1352
   isHidden: false
-  tag: ''
   attributes:
     address: w1352
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_04
   description: Modbus register w1353
   isHidden: false
-  tag: ''
   attributes:
     address: w1353
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_05
   description: Modbus register w1354
   isHidden: false
-  tag: ''
   attributes:
     address: w1354
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_06
   description: Modbus register w1355
   isHidden: false
-  tag: ''
   attributes:
     address: w1355
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_07
   description: Modbus register w1356
   isHidden: false
-  tag: ''
   attributes:
     address: w1356
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_08
   description: Modbus register w1357
   isHidden: false
-  tag: ''
   attributes:
     address: w1357
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_09
   description: Modbus register w1358
   isHidden: false
-  tag: ''
   attributes:
     address: w1358
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_10
   description: Modbus register w1359
   isHidden: false
-  tag: ''
   attributes:
     address: w1359
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_11
   description: Modbus register w1360
   isHidden: false
-  tag: ''
   attributes:
     address: w1360
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_12
   description: Modbus register w1361
   isHidden: false
-  tag: ''
   attributes:
     address: w1361
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_13
   description: Modbus register w1362
   isHidden: false
-  tag: ''
   attributes:
     address: w1362
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_14
   description: Modbus register w1363
   isHidden: false
-  tag: ''
   attributes:
     address: w1363
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_15
   description: Modbus register w1364
   isHidden: false
-  tag: ''
   attributes:
     address: w1364
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_16
   description: Modbus register w1365
   isHidden: false
-  tag: ''
   attributes:
     address: w1365
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_17
   description: Modbus register w1366
   isHidden: false
-  tag: ''
   attributes:
     address: w1366
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_18
   description: Modbus register w1367
   isHidden: false
-  tag: ''
   attributes:
     address: w1367
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_19
   description: Modbus register w1368
   isHidden: false
-  tag: ''
   attributes:
     address: w1368
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: SourceTray_Chr_20
   description: Modbus register w1369
   isHidden: false
-  tag: ''
   attributes:
     address: w1369
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_01
   description: Modbus register w1370
   isHidden: false
-  tag: ''
   attributes:
     address: w1370
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_02
   description: Modbus register w1371
   isHidden: false
-  tag: ''
   attributes:
     address: w1371
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_03
   description: Modbus register w1372
   isHidden: false
-  tag: ''
   attributes:
     address: w1372
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_04
   description: Modbus register w1373
   isHidden: false
-  tag: ''
   attributes:
     address: w1373
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_05
   description: Modbus register w1374
   isHidden: false
-  tag: ''
   attributes:
     address: w1374
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_06
   description: Modbus register w1375
   isHidden: false
-  tag: ''
   attributes:
     address: w1375
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_07
   description: Modbus register w1376
   isHidden: false
-  tag: ''
   attributes:
     address: w1376
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_08
   description: Modbus register w1377
   isHidden: false
-  tag: ''
   attributes:
     address: w1377
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_09
   description: Modbus register w1378
   isHidden: false
-  tag: ''
   attributes:
     address: w1378
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_10
   description: Modbus register w1379
   isHidden: false
-  tag: ''
   attributes:
     address: w1379
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_11
   description: Modbus register w1380
   isHidden: false
-  tag: ''
   attributes:
     address: w1380
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_12
   description: Modbus register w1381
   isHidden: false
-  tag: ''
   attributes:
     address: w1381
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_13
   description: Modbus register w1382
   isHidden: false
-  tag: ''
   attributes:
     address: w1382
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_14
   description: Modbus register w1383
   isHidden: false
-  tag: ''
   attributes:
     address: w1383
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_15
   description: Modbus register w1384
   isHidden: false
-  tag: ''
   attributes:
     address: w1384
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_16
   description: Modbus register w1385
   isHidden: false
-  tag: ''
   attributes:
     address: w1385
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_17
   description: Modbus register w1386
   isHidden: false
-  tag: ''
   attributes:
     address: w1386
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_18
   description: Modbus register w1387
   isHidden: false
-  tag: ''
   attributes:
     address: w1387
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_19
   description: Modbus register w1388
   isHidden: false
-  tag: ''
   attributes:
     address: w1388
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: TargetTray_Chr_20
   description: Modbus register w1389
   isHidden: false
-  tag: ''
   attributes:
     address: w1389
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_01
   description: Modbus register w1390
   isHidden: false
-  tag: ''
   attributes:
     address: w1390
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_02
   description: Modbus register w1391
   isHidden: false
-  tag: ''
   attributes:
     address: w1391
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_03
   description: Modbus register w1392
   isHidden: false
-  tag: ''
   attributes:
     address: w1392
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_04
   description: Modbus register w1393
   isHidden: false
-  tag: ''
   attributes:
     address: w1393
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_05
   description: Modbus register w1394
   isHidden: false
-  tag: ''
   attributes:
     address: w1394
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_06
   description: Modbus register w1395
   isHidden: false
-  tag: ''
   attributes:
     address: w1395
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_07
   description: Modbus register w1396
   isHidden: false
-  tag: ''
   attributes:
     address: w1396
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_08
   description: Modbus register w1397
   isHidden: false
-  tag: ''
   attributes:
     address: w1397
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_09
   description: Modbus register w1398
   isHidden: false
-  tag: ''
   attributes:
     address: w1398
   properties:
     valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 - name: Charge_Chr_10
-  description: "Modbus register \xC2\_w1399"
+  description: Modbus register w1399
   isHidden: false
-  tag: ''
   attributes:
-    address: "\xC2\_w1399"
+    address: w1399
   properties:
-    valueType: String
+    valueType: Uint16
     readWrite: RW
     units: ''
-    minimum: ''
-    maximum: ''
+    minimum: null
+    maximum: null
     defaultValue: ''
-    mask: ''
-    shift: ''
-    scale: ''
-    offset: ''
-    base: ''
+    mask: null
+    shift: null
+    scale: null
+    offset: null
+    base: null
     assertion: ''
     mediaType: ''
 deviceCommands:
-- name: ReadWriteStatus_HomingValue
+- name: Readfrei_group
   isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_Homing
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteStatus_Pick_and_PlaceValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_Pick_and_Place
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteStatus_CanBusValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_CanBus
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteStatus_PickValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_Pick
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteStatus_PlaceValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_Place
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteStatus_TrayChangeValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_TrayChange
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteStatus_MatrixValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_Matrix
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteStatus_PusherValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Status_Pusher
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteDayCounterValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: DayCounter
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTotalCounterValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TotalCounter
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCurrentBatchCounterValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: CurrentBatchCounter
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteBatchTargetQuantityValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: BatchTargetQuantity
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTo_PLC_FlagsValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: To_PLC_Flags
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteFrom_PLC_FlagsValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: From_PLC_Flags
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteActual_Pos_XValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Actual_Pos_X
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteActual_Pos_YValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Actual_Pos_Y
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteActual_Pick_RowValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Actual_Pick_Row
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteActual_PickPosValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Actual_PickPos
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteActual_PlacePos_Place_Row_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Actual_PlacePos_Place_Row_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteActual_PlacePos_Place_Row_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Actual_PlacePos_Place_Row_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteActual_PlacePos_Place_Row_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Actual_PlacePos_Place_Row_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePick_TypeValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Pick_Type
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePick_HeightValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Pick_Height
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePlace_HeightValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Place_Height
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePick_First_Row_XValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Pick_First_Row_X
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePick_First_Row_YValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Pick_First_Row_Y
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePick_Last_Row_XValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Pick_Last_Row_X
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePick_Last_Row_YValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Pick_Last_Row_Y
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteNr_Of_Pick_RowsValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Nr_Of_Pick_Rows
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteNr_Of_Pick_PositionsValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Nr_Of_Pick_Positions
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_6Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_6
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_7Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_7
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_8Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_8
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePlace_First_Row_XValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Place_First_Row_X
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePlace_First_Row_YValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Place_First_Row_Y
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePlace_Last_Row_XValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Place_Last_Row_X
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritePlace_Last_Row_YValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Place_Last_Row_Y
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteNr_Of_Place_RowsValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Nr_Of_Place_Rows
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteNr_Of_Place_PositionsValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Nr_Of_Place_Positions
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_9Value
-  isHidden: false
-  readWrite: RW
+  readWrite: R
   resourceOperations:
   - deviceResource: frei_9
     defaultValue: ''
     mappings: {}
-- name: ReadWritefrei_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
   - deviceResource: frei_10
     defaultValue: ''
     mappings: {}
-- name: ReadWritefrei_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
   - deviceResource: frei_11
     defaultValue: ''
     mappings: {}
-- name: ReadWritefrei_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
   - deviceResource: frei_12
     defaultValue: ''
     mappings: {}
-- name: ReadWritefrei_13Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
   - deviceResource: frei_13
     defaultValue: ''
     mappings: {}
-- name: ReadWritefrei_14Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
   - deviceResource: frei_14
     defaultValue: ''
     mappings: {}
-- name: ReadWritefrei_15Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
   - deviceResource: frei_15
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_in_UseValue
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_in_Use
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGrippers_In_Use_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Grippers_In_Use_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_16Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_16
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_17Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_17
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PickPos_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PickPos_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_18Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_18
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_19Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_19
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_20Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_20
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_21Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_21
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_22Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_22
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_23Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_23
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_24Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_24
-    defaultValue: ''
-    mappings: {}
-- name: ReadWritefrei_25Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: frei_25
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M1_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M1_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M2_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M2_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M3_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M3_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M4_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M4_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M5_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M5_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M6_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M6_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M7_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M7_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PlacePos_1Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PlacePos_1
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PlacePos_2Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PlacePos_2
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PlacePos_3Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PlacePos_3
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PlacePos_4Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PlacePos_4
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteGripper_M8_PlacePos_5Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Gripper_M8_PlacePos_5
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_13Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_13
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_14Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_14
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_15Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_15
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_16Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_16
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_17Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_17
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_18Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_18
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_19Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_19
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteSourceTray_Chr_20Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: SourceTray_Chr_20
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_10
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_11Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_11
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_12Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_12
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_13Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_13
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_14Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_14
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_15Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_15
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_16Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_16
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_17Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_17
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_18Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_18
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_19Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_19
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteTargetTray_Chr_20Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: TargetTray_Chr_20
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_01Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_01
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_02Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_02
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_03Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_03
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_04Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_04
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_05Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_05
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_06Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_06
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_07Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_07
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_08Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_08
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_09Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_09
-    defaultValue: ''
-    mappings: {}
-- name: ReadWriteCharge_Chr_10Value
-  isHidden: false
-  readWrite: RW
-  resourceOperations:
-  - deviceResource: Charge_Chr_10
     defaultValue: ''
     mappings: {}
