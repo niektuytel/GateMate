@@ -24,6 +24,10 @@ def sanitize_name(name):
 def clean_value(address):
     return address.replace("\xC2", "").replace("_", "").strip()
 
+def remove_characters(value):
+    # Remove all characters except numbers
+    return int(''.join(re.findall(r'\d+', value)))
+
 def determine_value_type(address):
     if address.startswith("w"):
         return "Uint16"  # "Word" typically means 16-bit unsigned integer
@@ -45,16 +49,20 @@ def generate_device_profile(manufacturer, modbus_data):
     for name, address in modbus_data.items():
         sanitized_name = sanitize_name(name)
         cleaned_address = clean_value(address)
+        startingAddress = remove_characters(cleaned_address)
+
         resource = {
             "name": sanitized_name,
             "description": f"Modbus register {cleaned_address}",
             "isHidden": False,
             "attributes": {
-                "address": cleaned_address
+                "primaryTable": "HOLDING_REGISTERS",
+                "rawType": determine_value_type(cleaned_address),
+                "startingAddress": startingAddress
             },
             "properties": {
                 "valueType": determine_value_type(cleaned_address),
-                "readWrite": "RW",  # Ensure compatibility, probably we will only use Read just to be sure
+                "readWrite": "R",  # Use it for Writing and Reading set it as RW
                 "units": "",  # Optional, but must be valid if provided
                 "minimum": None,  # Use None for optional values
                 "maximum": None,
