@@ -19,7 +19,7 @@ def parse_modbus_data(file_path):
     return modbus_data
 
 def sanitize_name(name):
-    return re.sub(r'[^a-zA-Z0-9_]', '', name)
+    return re.sub(r'[^a-zA-Z0-9-_~:;=]', '', name)
 
 def clean_value(address):
     return address.replace("\xC2", "").replace("_", "").strip()
@@ -32,7 +32,7 @@ def determine_value_type(address):
     if address.startswith("w"):
         return "Uint16"  # "Word" typically means 16-bit unsigned integer
     elif address.startswith("lw"):
-        return "Uint32"  # "Long Word" typically means 32-bit unsigned integer
+        return "Int32"  # "Long Word" typically means 32-bit
     return "String"
 
 def generate_device_profile(manufacturer, modbus_data):
@@ -58,7 +58,9 @@ def generate_device_profile(manufacturer, modbus_data):
             "attributes": {
                 "primaryTable": "HOLDING_REGISTERS",
                 "rawType": determine_value_type(cleaned_address),
-                "startingAddress": startingAddress
+                
+                # INFO: When having issue on reading and for example reading on port 1001 it could be that it should been defined here as 1000. (counting from 0 VS 1 conflict)
+                "startingAddress": startingAddress 
             },
             "properties": {
                 "valueType": determine_value_type(cleaned_address),

@@ -1,76 +1,93 @@
-import requests
+import pyperclip
 import json
 
-# EdgeX Foundry API URL
-BASE_URL = "http://192.168.8.128:59881/api/v3"
+def generate_device_creation_curl(
+    device_name,
+    description,
+    labels,
+    profile_name,
+    auto_events,
+    protocols
+):
+    """
+    Generate a curl command to create a device in EdgeX Foundry.
 
-# Define the device setup function
-def configure_device(device_name, profile_name, labels, keys):
-    device_data = {
-        "name": device_name,
-        "description": "Device configured from Modbus data",
-        "labels": labels,  # e.g., ["modbus", "automation"]
-        "profileName": profile_name,
-        "protocols": {
-            "modbus-tcp": {
-                "address": "192.168.1.100",  # Replace with your device IP
-                "port": "502",               # Default Modbus TCP port
-                "unitID": "1"                # Modbus Unit ID
+    Parameters:
+        device_name (str): Name of the device.
+        description (str): Description of the device.
+        labels (list): List of labels for the device.
+        profile_name (str): Profile name of the device.
+        auto_events (list): List of auto events for the device.
+        protocols (dict): Protocols and their configurations.
+    Returns:
+        str: Generated curl command.
+    """
+
+    url = "http://localhost:59881/api/v3/device"
+
+    payload = [
+        {
+            "apiVersion": "v3",
+            "device": {
+                "name": device_name,
+                "description": description,
+                "adminState": "UNLOCKED",
+                "operatingState": "UP",
+                "labels": labels,
+                "serviceName": "device-modbus",
+                "profileName": profile_name,
+                "autoEvents": auto_events,
+                "protocols": protocols,
             }
-        },
-        "autoEvents": [
-            {
-                "sourceName": key,
-                "interval": "5s",
-                "onChange": True
-            }
-            for key in keys
-        ]
-    }
-
-    # API endpoint to create the device
-    endpoint = f"{BASE_URL}/device"
-
-    # Send the POST request to EdgeX Foundry
-    headers = {"Content-Type": "application/json"}
-    response = requests.post(endpoint, headers=headers, json=device_data)
-
-    if response.status_code == 201:
-        print(f"Device '{device_name}' successfully created.")
-    else:
-        print(f"Failed to create device '{device_name}'.")
-        print(f"Status Code: {response.status_code}")
-        print(f"Response: {response.text}")
-
-# Main execution
-if __name__ == "__main__":
-    device_service_name = "device-modbus" # input('Wat is de "device service name"?')
-    auto_event_interval_in_seconds = 5 # input('Wat is de interval van lezen in seconden?')
-
-    device_name = "Machinova_Test_Device"  # Unique name for your device
-    profile_name = "Machinova_Test_DeviceProfile"  # Uploaded profile name
-    labels = ["modbus", "automation"]
-    keys = [
-        "Status_Homing",
-        "Status_Pick_and_Place",
-        "Status_CanBus",
-        "Status_Pick",
-        "Status_Place",
-        "Status_TrayChange",
-        "Status_Matrix",
-        "Status_Pusher",
-        "frei_1",
-        "frei_2"
+        }
     ]
 
-    configure_device(device_name, profile_name, labels, keys)
+    # Convert payload to JSON string
+    payload_json = json.dumps(payload)
 
-# Make this working with so least as possbile information from the user, maybe use straight the edgex api
+    # Generate curl command
+    curl_command = f"curl -X POST -H \"Content-Type: application/json\" -d '{payload_json}' {url}"
+    print(f"{curl_command}\n\n\n")
 
-#AND get following working:
-# dEventRequest.Event.Readings[0].DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;="
-# level=ERROR ts=2024-12-20T00:17:02.355774445Z app=app-influx-export source=runtime.go:427 msg="unable to process payload AddEventRequest.Event.DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;=; AddEventRequest.Event.Readings[0].DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;=. X-Correlation-ID=a3bb3a07-ca15-426e-9d6b-48079db82a7a"
-# level=ERROR ts=2024-12-20T00:17:02.355981203Z app=app-influx-export source=messaging.go:199 msg="MessageBus Trigger: Failed to process message on pipeline(s): unable to decode message: unable to process payload AddEventRequest.Event.DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;=; AddEventRequest.Event.Readings[0].DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;="
-# level=ERROR ts=2024-12-20T00:18:12.898996953Z app=app-influx-export source=runtime.go:427 msg="unable to process payload AddEventRequest.Event.DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;=; AddEventRequest.Event.Readings[0].DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;=. X-Correlation-ID=d3468e32-c530-4011-9cf6-09d7ac9ab39f"
-# level=ERROR ts=2024-12-20T00:18:12.899217375Z app=app-influx-export source=messaging.go:199 msg="MessageBus Trigger: Failed to process message on pipeline(s): unable to decode message: unable to process payload AddEventRequest.Event.DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;=; AddEventRequest.Event.Readings[0].DeviceName field only allows unreserved characters which are ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_~:;="
-# pi@gatemate:~$ docker logs edgex-app-influxdb-export
+    # Copy to clipboard
+    pyperclip.copy(curl_command)
+    print("Curl command copied to clipboard. You can now paste and execute it in your terminal.")
+
+    return curl_command
+
+# Example Usage
+if __name__ == "__main__":
+    deviceResourcesNames = ["Status_Homing"]
+
+    # Parameters for device creation
+    DEVICE_NAME = "Machinova_Test_2"
+    DESCRIPTION = "Testing modbus connection with data"
+    PROFILE_NAME = "Machinova_Test1_DeviceProfile"
+    LABELS = ["modbus", "automation"]
+
+    AUTO_EVENTS = [
+        {
+            "interval": "2s",
+            "onChange": True,
+            "sourceName": sourceName
+        } for sourceName in deviceResourcesNames
+    ]
+
+    PROTOCOLS = {
+        "modbus-tcp": {
+            "Address": "192.168.8.237",
+            "IdleTimeout": "5",
+            "Port": "502",
+            "Timeout": "5",
+            "UnitID": "1"
+        }
+    }
+
+    generate_device_creation_curl(
+        device_name=DEVICE_NAME,
+        description=DESCRIPTION,
+        labels=LABELS,
+        profile_name=PROFILE_NAME,
+        auto_events=AUTO_EVENTS,
+        protocols=PROTOCOLS
+    )
