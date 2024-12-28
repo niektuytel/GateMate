@@ -1,6 +1,19 @@
-import pyperclip
 import json
+import yaml
 
+# Function to read the device profile name from the YAML file
+def get_device_profile_name(file_name):
+    try:
+        with open(file_name, 'r') as file:
+            data = yaml.safe_load(file)
+            return data.get('name', None)
+    except FileNotFoundError:
+        print(f"Error: File '{file_name}' not found.")
+        return None
+    except yaml.YAMLError as e:
+        print(f"Error parsing YAML file: {e}")
+        return None
+    
 def generate_device_creation_curl(
     device_name,
     description,
@@ -47,22 +60,29 @@ def generate_device_creation_curl(
 
     # Generate curl command
     curl_command = f"curl -X POST -H \"Content-Type: application/json\" -d '{payload_json}' {url}"
-    print(f"{curl_command}\n\n\n")
-
-    # Copy to clipboard
-    pyperclip.copy(curl_command)
-    print("Curl command copied to clipboard. You can now paste and execute it in your terminal.")
+    print(f"{curl_command}")
 
     return curl_command
 
 # Example Usage
 if __name__ == "__main__":
     deviceResourcesNames = ["Status_Homing"]
+    PROTOCOLS = {
+        "modbus-tcp": {
+            "Address": "192.168.8.237",
+            "IdleTimeout": "5",
+            "Port": "502",
+            "Timeout": "5",
+            "UnitID": "1"
+        }
+    }
 
     # Parameters for device creation
-    DEVICE_NAME = "Machinova_Test_2"
-    DESCRIPTION = "Testing modbus connection with data"
-    PROFILE_NAME = "Machinova_Test1_DeviceProfile"
+    file_name = "ModBusDeviceProfile.yml"
+    deviceProfileName = get_device_profile_name(file_name)
+    DEVICE_NAME = f"{deviceProfileName}_Device"
+    DESCRIPTION = f"Modbus connection with data from profile {deviceProfileName}"
+    PROFILE_NAME = deviceProfileName
     LABELS = ["modbus", "automation"]
 
     AUTO_EVENTS = [
@@ -73,15 +93,6 @@ if __name__ == "__main__":
         } for sourceName in deviceResourcesNames
     ]
 
-    PROTOCOLS = {
-        "modbus-tcp": {
-            "Address": "192.168.8.237",
-            "IdleTimeout": "5",
-            "Port": "502",
-            "Timeout": "5",
-            "UnitID": "1"
-        }
-    }
 
     generate_device_creation_curl(
         device_name=DEVICE_NAME,
