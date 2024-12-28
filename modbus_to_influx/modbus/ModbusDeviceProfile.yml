@@ -1,6 +1,6 @@
-name: Machinova_Test1_DeviceProfile
+name: Test123_DeviceProfile
 description: Device profile generated from Modbus data
-manufacturer: Machinova_Test1
+manufacturer: Test123
 model: ModbusModel
 labels:
 - modbus
