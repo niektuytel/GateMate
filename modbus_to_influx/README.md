@@ -1,8 +1,7 @@
 # Create modbus to influx compose
 Create the following compose file on the RPI;
-- Login on the RPI 
-- Create a repository `repo`  
-- Install Golang on the RPI 
+- Login on the RPI  
+- Install Golang on the RPI
 
 ### Create 'edgexfoundry/app-influxdb:2.3.0' docker image
 - `cd edgex-app-influxdb-export`  
@@ -14,7 +13,9 @@ Create the following compose file on the RPI;
 ### Define application that van export data to influxDB
 We want to send the incomming data to influxDB in this case over MQTT (faster protocol then HTTP)    
 - Set following compose file with https://github.com/edgexfoundry/edgex-compose  
-i.e. `make gen no-secty arm64 ds-modbus mqtt-broker` and update it with following services. (NOTE: remove/edit generated mqtt-broker)
+i.e. `make gen no-secty arm64 ds-modbus` and update it with following services. ( mqtt-brokerNOTE: remove/edit generated mqtt-broker)
+
+Or run Compose file: ``
 ```
 name: edgex
 services:

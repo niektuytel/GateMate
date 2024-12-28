@@ -1,0 +1,16 @@
+[[DeviceList]]
+    Name = "Modbus-TCP-Temperature-Sensor"
+    ProfileName = "Ethernet-Temperature-Sensor"
+    Description = "This device is a product for monitoring the temperature via the ethernet"
+    labels = [ "temperature","modbus TCP" ]
+    [DeviceList.Protocols]
+        [DeviceList.Protocols.modbus-tcp]
+            Address = "192.168.8.128"
+            Port = "502"
+            UnitID = "1"
+            Timeout = "5"
+            IdleTimeout = "5"
+        [[DeviceList.AutoEvents]]
+        Interval = "30s"
+        OnChange = false
+        SourceName = "Temperature"
