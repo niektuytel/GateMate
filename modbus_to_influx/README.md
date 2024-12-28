@@ -31,6 +31,7 @@ Create the following compose file on the RPI;
 - `python modbus_create_device.py`
 
 ### When not receiving data in your influx bucket check logs on:
+- `docker logs edgex-device-modbus`
 - `docker logs telegraf`
 - `docker logs edgex-mqtt-broker`
 - `docker logs edgex-app-influxdb-export`
