@@ -78,7 +78,7 @@ if __name__ == "__main__":
     }
 
     # Parameters for device creation
-    file_name = "ModBusDeviceProfile.yml"
+    file_name = "ModbusDeviceProfile.yml"
     deviceProfileName = get_device_profile_name(file_name)
     DEVICE_NAME = f"{deviceProfileName}_Device"
     DESCRIPTION = f"Modbus connection with data from profile {deviceProfileName}"

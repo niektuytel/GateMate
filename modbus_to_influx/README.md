@@ -14,7 +14,7 @@ Create the following compose file on the RPI;
 
 ### Define custom configurations
 - `cd custom-config`
-- `python update_configurations.py` TODO:
+- `python update_configurations.py` Fill in your credentials been used on influx db
 - `cd ..`
 
 ### Run prebuilt compose file
@@ -24,6 +24,7 @@ Create the following compose file on the RPI;
 - `cd modbus`
 - Update [modbus_data.txt](./modbus/modbus_data.txt) file with modbus data we want to read out. 
 - `python modbus_create_device_profile.py`
+- `pip install pyyaml`
 - Define in the modbus_create_device.py the 
     - `deviceResourcesNames` with the values you want to read 
     - `PROTOCOLS` with the modbus information
@@ -34,7 +35,10 @@ Create the following compose file on the RPI;
 - `docker logs edgex-mqtt-broker`
 - `docker logs edgex-app-influxdb-export`
 
-### Create Docker compose file manually
+### References
+- https://docs.edgexfoundry.org/3.1/microservices/application/ApplicationServices/
+
+### (Optional) Create Docker compose file manually
 We want to send the incomming data to influxDB in this case over MQTT (faster protocol then HTTP)    
 - Set following compose file with https://github.com/edgexfoundry/edgex-compose  
     - `make gen no-secty arm64 ds-modbus` and update it with following services.
@@ -59,14 +63,3 @@ We want to send the incomming data to influxDB in this case over MQTT (faster pr
   bucket = "Machinova_Test"
   timeout = "10s"
 ```
-
-### References
-- https://docs.edgexfoundry.org/3.1/microservices/application/ApplicationServices/
-
-## Setup device service for reading modbus data
-- Check if the modbus ip is public and try to bind to it
-- make sure edgexfoundry/core-metadata-arm is accesable from outside the docker container by removing the `127.0.0.1`
-- 
-- When the plc/device is been binded on the modbus device see if you receive some data:  
-  `docker logs edgex-device-modbus`
-- Create a device profile, this explains how the data is been structured that will been received through the `edgex-device-modbus`. [see scipt for auto generating device profile file](./modbus/modbus_create_device_profile.py)
